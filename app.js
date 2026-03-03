@@ -1,3 +1,4 @@
+//tic-tac-toe game
 let boxes=document.querySelectorAll(".box");
 let resetBtn=document.querySelector(".reset-btn");
 let newGameBtn= document.querySelector(".new-btn");
@@ -35,7 +36,7 @@ boxes.forEach((box) => {
             turnO=false;
         }else {
             box.innerText = "X";
-            box.style.color = "#b0413e"
+            box.style.color = "#b0413e";
             turnO= true;
         }
         box.disabled =true;
@@ -58,9 +59,13 @@ const enableBoxes = () => {
 const showWinner= (winner) =>{
     msg.innerText = `congrats, winner is ${winner}`;
     msgContainer.classList.remove("hide");
-    disabledBoxes();
+    disbaleBoxes();
 };
-
+const gameDraw = () =>{
+    msg.innerText = `Game Draw`;
+    msgContainer.classList.remove("hide");
+    disbaleBoxes();
+}
 const checkWinner = () =>{
     let isDraw=true;
     for(pattern of winPatters){
@@ -89,6 +94,7 @@ const checkWinner = () =>{
     }
 };
 
+
 newGameBtn.addEventListener("click", () =>{
     buttonSound.currentTime=0;
     buttonSound.play();
@@ -99,4 +105,3 @@ resetBtn.addEventListener("click", ()=>{
     buttonSound.play();
     resetGame();
 });
-
