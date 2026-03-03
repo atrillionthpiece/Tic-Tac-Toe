@@ -76,7 +76,7 @@ const checkWinner = () =>{
             if (pos1Val === pos2Val && pos2Val === pos3Val){
                 console.log("winner", pos1Val);
                 showWinner(pos1Val);
-                winSound.currentTime=0;
+                //winSound.currentTime=0;
                 winSound.play();
                 return;
             }
@@ -89,7 +89,7 @@ const checkWinner = () =>{
     })
     if (isDraw){
         gameDraw();
-        drawSound.currentTime=0;
+        //drawSound.currentTime=0;
         drawSound.play();
     }
 };
@@ -105,3 +105,4 @@ resetBtn.addEventListener("click", ()=>{
     buttonSound.play();
     resetGame();
 });
+
