@@ -36,7 +36,7 @@ h1{
     background-color:#ffffc7;
 }
 .box:active{
-    font-size:8vmin;
+    font-size:10vmin;
     background-color:rgb(201,169,169);
 }
 .reset-btn{
@@ -91,3 +91,4 @@ h1{
     display:none;
 
 }
+
