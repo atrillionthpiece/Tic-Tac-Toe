@@ -35,6 +35,10 @@ h1{
     color:#b0413e;
     background-color:#ffffc7;
 }
+.box:active{
+    font-size:8vmin;
+    background-color:rgb(201,169,169);
+}
 .reset-btn{
     padding:1rem;
     font-size:1.25rem;
@@ -85,4 +89,5 @@ h1{
 }
 .hide{
     display:none;
+
 }
